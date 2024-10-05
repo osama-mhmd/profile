@@ -1,9 +1,10 @@
-<svelte:head>
-	<title>Osama Mohammed</title>
-	<meta name="description" content="Osama Mohammed, Full Stack Developer" />
-</svelte:head>
+<script>
+	import { MapPin } from "lucide-svelte";
+</script>
 
-<section>
-	<h1>Osama Mohammed</h1>
-	<h2>Full Stack Developer</h2>
+<section class="mt-12">
+	<div class="container">
+		<h1>Osama Mohammed</h1>
+		<h2 class="flex items-center gap-1"><MapPin size={20} /> Egypt, Full Stack Developer</h2>
+	</div>
 </section>
