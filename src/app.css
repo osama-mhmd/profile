@@ -39,7 +39,8 @@ p {
 }
 
 a {
-	color: var(--color-theme-1);
+	/* color: var(--color-theme-2); */
+	color: blue;
 	text-decoration: none;
 }
 
@@ -48,11 +49,15 @@ a:hover {
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 2.25rem;
 }
 
 h2 {
-	font-size: 1rem;
+	font-size: 1.75rem;
+}
+
+h3 {
+	font-size: 1.25rem;
 }
 
 pre {
@@ -91,14 +96,34 @@ button:focus:not(:focus-visible) {
 	}
 }
 
-.visually-hidden {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: auto;
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-	white-space: nowrap;
+.have-icon {
+	@apply inline-flex items-center gap-1;
+}
+
+h2.have-icon {
+	@apply gap-2;
+}
+
+span.have-icon>svg {
+	@apply size-5;
+}
+
+h2.have-icon>svg {
+	@apply size-7;
+}
+
+.tag {
+	@apply rounded-3xl px-4 text-sm bg-blue-400;
+}
+
+.tag-gold {
+	@apply bg-amber-400;
+}
+
+.highlighted {
+	@apply text-blue-600
+}
+
+ul {
+	@apply my-1 ps-2 list-disc list-inside;
 }
