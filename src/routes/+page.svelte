@@ -31,7 +31,7 @@
 					<li><span class="have-icon"><Moon /> Muslim Notebook</span></li>
 				</ul>
 			</div>
-			<p class="mt-4 mb-2">
+			<p class="mt-4 mb-2 space-y-2">
 				<span class="tag">Typescript</span>
 				<span class="tag">nextjs</span>
 				<span class="tag">postgres</span>

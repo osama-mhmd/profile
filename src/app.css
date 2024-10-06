@@ -1,4 +1,4 @@
-@import '@fontsource/inknut-antiqua';
+@import "@fontsource/inknut-antiqua";
 
 @tailwind base;
 @tailwind components;
@@ -22,9 +22,11 @@ body {
 	background-attachment: fixed;
 	background-color: var(--color-bg-1);
 	background-size: 100vw 100vh;
-	background-image: radial-gradient(50% 50% at 50% 50%,
+	background-image: radial-gradient(
+			50% 50% at 50% 50%,
 			rgba(255, 255, 255, 0.75) 0%,
-			rgba(255, 255, 255, 0) 100%),
+			rgba(255, 255, 255, 0) 100%
+		),
 		linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
 }
 
@@ -104,16 +106,16 @@ h2.have-icon {
 	@apply gap-2;
 }
 
-span.have-icon>svg {
+span.have-icon > svg {
 	@apply size-5;
 }
 
-h2.have-icon>svg {
+h2.have-icon > svg {
 	@apply size-7;
 }
 
 .tag {
-	@apply rounded-3xl px-4 text-sm bg-blue-400;
+	@apply rounded-3xl px-4 inline-block py-1.5 text-sm bg-blue-400;
 }
 
 .tag-gold {
@@ -121,9 +123,9 @@ h2.have-icon>svg {
 }
 
 .highlighted {
-	@apply text-blue-600
+	@apply text-blue-600;
 }
 
 ul {
-	@apply my-1 ps-2 list-disc list-inside;
+	@apply my-1 ps-8 list-disc;
 }
